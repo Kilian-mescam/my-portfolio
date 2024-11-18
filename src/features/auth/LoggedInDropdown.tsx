@@ -8,7 +8,6 @@ import { LogOut } from "lucide-react"
 export type LoggedInDropdownProps = PropsWithChildren
 
 export const LoggedInDropdown = (props: LoggedInDropdownProps) => {
-
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -16,7 +15,7 @@ export const LoggedInDropdown = (props: LoggedInDropdownProps) => {
             </DropdownMenuTrigger>
             <DropdownMenuContent>
             <form>
-
+  
             <DropdownMenuItem onClick={() => {
                         signOutAction()
                     }}>

@@ -38,7 +38,7 @@ export const action = createSafeActionClient({
 });
 
 export const userAction = createSafeActionClient({
-  handleServerError(e) {
+  handleServerError(e: Error) {
     if (e instanceof ActionError) {
       return {
         serverError: e.message
